@@ -7,6 +7,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.Test;
+import time
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -33,7 +34,7 @@ public class Login {
 			driver = new FirefoxDriver();
 		}
 
-
+                
 		driver.get("http://leaftaps.com/opentaps");
 		driver.findElementById("username").sendKeys("DemoSalesManager");
 		driver.findElementById("password").sendKeys("crmsfa");
